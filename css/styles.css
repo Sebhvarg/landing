@@ -29,7 +29,7 @@
 }
 
 #portada h2{
-    font-size: 4 rem;
+    font-size: 3rem;
     font-family: Helvetica, sans-serif;
     color: white;
     font-weight: 700;
@@ -70,7 +70,6 @@
     transition: 0.5s;
 }
 
-/* From Uiverse.io by Satwinder04 */ 
 .card {
     position: relative;
     width: 300px;
@@ -314,11 +313,75 @@
     /* que no se repita el background */
     background-repeat: no-repeat;
     background-position: bottom left;
-    ;
-
-
-    height: 470px;
+    height: fit-content;
   }
+
+  .price2{
+    font-size: 1rem;
+    line-height: 1;
+    font-weight: 600;
+    color: #fefefe;
+    text-decoration: line-through;
+  }
+  /* From Uiverse.io by alexmaracinaru */ 
+.cardExp {
+  width: fit-content;
+  background: white;
+  padding: .4em;
+  border-radius: 6px;
+}
+.exp-img {
+  width: 100%;
+  border-radius: 6px 6px 0 0;
+} 
+
+.card-image {
+  background-color: rgb(236, 236, 236);
+  width: 100%;
+  height: fit-content;
+  border-radius: 6px 6px 0 0;
+}
+
+.card-image:hover {
+  transform: scale(0.98);
+}
+
+.category {
+  text-transform: uppercase;
+  font-size: 0.7em;
+  font-weight: 600;
+  color: rgb(63, 121, 230);
+  padding: 10px 7px 0;
+}
+
+.category:hover {
+  cursor: pointer;
+}
+
+.heading {
+  font-weight: 600;
+  color: rgb(88, 87, 87);
+  padding: 7px;
+}
+
+.heading:hover {
+  cursor: pointer;
+}
+
+.author {
+  color: gray;
+  font-weight: 400;
+  font-size: 11px;
+  padding-top: 20px;
+}
+
+.name {
+  font-weight: 600;
+}
+
+.name:hover {
+  cursor: pointer;
+}
   @media (max-width: 768px) {
     #experiencia {
         background-size: 65%;
@@ -357,10 +420,32 @@
 
 }
 
+
+
 #footer{
     background-color: #222;
     color: white;
     text-align: center;
     padding: 10px;
     font-family: Helvetica, sans-serif;
+}
+.form-left {
+  display: flex;
+  flex-direction: column; /* Organiza en columnas (h4 en la primera fila, img en la segunda) */
+  align-items: center;    /* Centra los elementos horizontalmente */
+  text-align: center;     /* Centra el texto del h4 */
+}
+
+.form-img {
+  max-width: 100%; /* Asegura que la imagen no se desborde */
+  height: auto;    /* Mantiene la proporción */
+}
+
+#footer{
+  background-image: url('https://external-preview.redd.it/zZMA0rF1Oo31Fwfam8h82JozFLyAajJdLX0CKeH157M.png?auto=webp&s=894ba9f7c2ecb8e8185cb61bd52fbbc62d4ecef7');
+  background-size:contain;
+  /* que no se repita el background */
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  height: 470px;
 }
